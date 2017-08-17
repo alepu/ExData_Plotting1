@@ -12,8 +12,10 @@ eldata <- subset(tempdata, (Date == "2007-02-01" | Date == "2007-02-02") &
                          !is.na(tempdata$Global_active_power))
 
 # Generates the plot
-png("plot1.png", width = 480, height = 480, units = "px")
 hist(eldata$Global_active_power, xlab = "Global Active Power (kilowatts)", 
      ylab = "Frequency", col = "red", main = "Global Active Power")
+
+# Creating the png file
+dev.copy(png, "plot2.png", width=480, height=480)
 dev.off()
 
