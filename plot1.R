@@ -16,6 +16,6 @@ hist(eldata$Global_active_power, xlab = "Global Active Power (kilowatts)",
      ylab = "Frequency", col = "red", main = "Global Active Power")
 
 # Creating the png file
-dev.copy(png, "plot2.png", width=480, height=480)
+dev.copy(png, "plot1.png", width=480, height=480)
 dev.off()
 
